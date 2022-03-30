@@ -1,3 +1,4 @@
+<?php include("query.php"); ?>
 <?php 
      if(isset($_GET['name'])){
           echo htmlentities($_GET['name']);
