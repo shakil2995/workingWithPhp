@@ -6,11 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
     <title>Contact us</title>
 </head>
 <body>
-<ul class="nav nav-tabs">
-    <li class="nav-item">Home</li>
-    <li class="nav-item">Form</li>
-    <li class="nav-item">Admin</li>
-</ul>
+
+
+<nav class="navbar navbar-expand-md  mb-4">
+      <a class="navbar-brand" href="#">BBB</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Admin</a>
+          </li>
+
+        </ul>
+    </nav>
