@@ -1,5 +1,5 @@
 <?php 
-// include("form.php");
+include("form.php");
 ?>
 <h1>Contacts</h1>
 <?php foreach ($contacts_conn as $contact) : ?>
