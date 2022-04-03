@@ -7,28 +7,15 @@ include("header.php");
 ?>
 <!--  form -->
 <?php 
-    //  if(isset($_GET['name'])){
-    //     //   echo htmlentities($_GET['name']);
-    //  }
-    // if(isset($_POST['submit'])){
-    //     $name = mysqli_real_escape_string($conn,$_POST['name']);
-    //     echo htmlentities($_GET['name']);
-    //     $email = mysqli_real_escape_string($conn,$_POST['email']);
-    //     $message = mysqli_real_escape_string($conn,$_POST['message']);
-    //     $query = "INSERT INTO contacts(name,email,message) VALUES ('$name','$email','$message')";
-    //     if(mysqli_query($conn,$query)){
-    //         header('Location:index.php');
-    //     } else{
-    //         echo 'ERROR:'.mysqli_error($conn);
-    //     }
-    // }
-
+   if ( isset( $_GET['name']) && isset($_GET['email']) && isset($_GET['message'] ) ) {
+    //    echo ("not here");
+    $name = $_GET['name'];
+    $email = $_GET['email'];
+    $message = $_GET['message'];
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
       }
-      
-      $sql = "INSERT INTO contacts(name,email,message) VALUES ('Shakil5','5@gmail.com','AHhahhaah')";
-      
+      $sql = "INSERT INTO contacts(name,email,message) VALUES ('$name','$email','$message')";
       if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
       } else {
@@ -36,22 +23,9 @@ include("header.php");
       }
       
       $conn->close();
+   }
       ?>
-
-
-
-?>
-
-
-
-
-
-
-
-
-
-
-    <form action="index.php " method="get">
+<form action="index.php " method="get">
         <div>
             <label for="">Name</label>
             <input type="text" name="name" placeholder="Enter Name">
@@ -63,15 +37,17 @@ include("header.php");
         <br>
         <div>
             <label for="">Message </label>
-            <input type="text" name="message" placeholder="Write your message here">
+            <input type="text" name="message" style="height:200px" placeholder="Write your message here">
         </div>
         <button class="btn btn-primary btn-lg" type="submit">GO</button>
     </form>
+
+
+<!-- 
+
 <!-- form end -->
     <h1>Contacts</h1>
     <!--  print data -->
-    
-
     <br>
 <footer class="footer">
          &copy; shakil ahmed - 2022
