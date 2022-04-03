@@ -13,13 +13,13 @@
 
 
 <nav class="navbar navbar-expand-md  mb-4">
-      <a class="navbar-brand" href="#">BBB</a>
+      <a class="navbar-brand" href="index.php">BBB</a>
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+            <a class="nav-link" href="index.php">Home <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Admin</a>
+            <a class="nav-link" href="admin.php">Admin</a>
           </li>
 
         </ul>
