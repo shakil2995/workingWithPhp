@@ -4,6 +4,8 @@ body {
 }
 .navbar{
     padding-left: 50px;
+    margin-bottom: 50px;
+    
 }
 
 .main-contaner{
@@ -33,4 +35,8 @@ a {
 }
 footer{
  text-align: center;
+}
+
+element {
+	margin-top: 50px;
 }
