@@ -1,6 +1,6 @@
 body {
 	color: rgb(255, 255, 255);
-     background-color:rgb(41, 41, 41);
+     /* background-color:rgb(41, 41, 41); */
     
 }
 .navbar{
@@ -11,9 +11,9 @@ body {
 
 .main-contaner{
     /* height:60vh; */
-    background-color:rgb(48, 48, 48);
+    background-color:rgba(48, 48, 48, 0.137);
     padding:20px;
-    border: 3px solid rgba(75, 79, 83, 0.781);
+    border: 3px solid rgba(75, 79, 83, 0.226);
     border-radius:20px;
     max-width: 80%;
     margin-left: auto;
@@ -22,7 +22,7 @@ body {
 
 .c-card{
     /* border: 2px solid rgb(250, 0, 0); */
-    background-color:rgb(92, 92, 92);
+    background-color:rgba(92, 92, 92, 0.164);
     border-radius: 5px;
     margin:20px;
     width:90%;
@@ -79,6 +79,14 @@ element {
 	border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
+}
+.bg-dark {
+	--bs-bg-opacity: .6;
+	background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important;
+}
+.navbar {
+	padding-left: 50px;
+	margin-bottom: 50px;
 }
 @media only screen and (max-width: 1000px) {
     .main-contaner{

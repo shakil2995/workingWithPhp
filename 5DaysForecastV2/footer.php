@@ -1,7 +1,7 @@
 <br>
 <br>
 <footer>
-    &copy; Shakil ahmed - 2022
+    <!-- &copy; - 2022 -->
 </footer>
 
 

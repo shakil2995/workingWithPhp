@@ -12,7 +12,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.php"><span style="color:aquamarine">Shakil's </span>Forecast</a>
+    <a class="navbar-brand" href="index.php"><span style="color:aquamarine">5Days </span>Forecast</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
