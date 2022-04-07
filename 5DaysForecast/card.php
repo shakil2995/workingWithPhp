@@ -1,8 +1,8 @@
 <div class="main-contaner"> 
 <form class="search" action="index.php" method="get">
     <div class="center">
-        <input type="text" style="width:85%" name="city_name" placeholder="Enter City Name">
-        <input  class="btn btn-primary btn-md border border-radius center" type="submit" name="submit_button"value="Go"/>
+        <input class="input_box" type="text" name="city_name" placeholder="Enter City Name">
+        <input class="btn btn-primary btn-md border border-radius center search_btn" type="submit" name="submit_button"value="Go"/>
     </div>
 </form>    
 <div class=" card-group w-80 ">
@@ -19,8 +19,11 @@
             $wind_speed = $decoded->list[$i]->wind->speed;
             $cTime = date('h:i A');
             $city_name=$decoded->city->name;
+            $cod=$decoded->cod;
+            // echo $cod;
             // echo $i;
             ?>
+<?php if($cod == '200'):?>
             <div class="card c-card ">
                 <img class="card-img-top" style="width=30px"; src="https://openweathermap.org/img/wn/<?php echo $icon ?>@2x.png" alt="Card image cap">
                 <div class="card-body">
@@ -35,7 +38,7 @@
                     <p class="card-text"><small class="text-muted">Last updated at <?php echo $cTime ?> </small></p>
                 </div>
             </div>
-
+<?php endif ;?>
     <?php endfor; ?>
     </div>
 </div>

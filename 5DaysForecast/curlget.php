@@ -1,6 +1,11 @@
 <?php
 if(isset($_GET['city_name'])) {
+    if($_GET['city_name'] ==""){
+        header("Location: index.php");
+    }
+    elseif($_GET['city_name'] !=""){
         $city_name=$_GET['city_name'];
+        }
        } else {
         $city_name="dhaka";
        }
