@@ -1,0 +1,118 @@
+body {
+	color: rgb(255, 255, 255);
+     background-color:rgb(41, 41, 41);
+    
+}
+.navbar{
+    padding-left: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.main-contaner{
+    /* height:60vh; */
+    background-color:rgb(48, 48, 48);
+    padding:20px;
+    border: 3px solid rgba(75, 79, 83, 0.781);
+    border-radius:20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.c-card{
+    /* border: 2px solid rgb(250, 0, 0); */
+    background-color:rgb(92, 92, 92);
+    border-radius: 5px;
+    margin:20px;
+    width:90%;
+}
+.card-img-top{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card{
+        box-shadow: none;
+}
+a {
+	color: rgb(0, 0, 0);
+	text-decoration: underline;
+}
+.nav-link {
+	display: block;
+	padding: .5rem 1rem;
+	color: #161616;
+	text-decoration: none;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+footer{
+ text-align: center;
+}
+
+element {
+	margin-top: 50px;
+}
+.search{
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input_box{
+    width:85%;
+}
+.search_btn{
+
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-group > .card:not(:first-child) {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.card-group > .card:first-child {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+@media only screen and (max-width: 1000px) {
+    .main-contaner{
+        background-color:rgb(48, 48, 48);
+        padding:10px;
+        border: 3px solid rgba(75, 79, 83, 0.781);
+        border-radius:10px;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .c-card{
+        /* border: 2px solid rgb(250, 0, 0); */
+        /* display:block; */
+        background-color:rgb(92, 92, 92);
+        border-radius: 5px;
+        margin:20px;
+        width:90%;
+    }
+    .search{
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .center{
+        /* width:50%; */
+        /* padding-left:45%; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .input_box{
+        width:75%;
+    }
+    .search_btn{
+
+    }
+  }
