@@ -17,6 +17,7 @@
             $epoch=$decoded->list[$i]->dt;
             $time=new DateTime("@$epoch");
             $wind_speed = $decoded->list[$i]->wind->speed;
+            date_default_timezone_set('Asia/Dhaka');
             $cTime = date('h:i A');
             $city_name=$decoded->city->name;
             $cod=$decoded->cod;
