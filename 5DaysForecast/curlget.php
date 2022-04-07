@@ -1,6 +1,6 @@
 <?php 
 $api_key="398e310b24f291b753fabdb60b31cc14";
-$url = "http://api.openweathermap.org/data/2.5/weather?q=dhaka&units=metric&appid=$api_key";
+$url = "http://api.openweathermap.org/data/2.5/forecast?q=dhaka&units=metric&appid=$api_key";
 $ch = curl_init();
 // echo $url;
 curl_setopt($ch,CURLOPT_URL,$url);
@@ -10,6 +10,7 @@ if($err = curl_error($ch)){
     echo $err;
 } else {
     $decoded = json_decode($res);
-    print_r($decoded);
+    print_r($decoded->list[0]->weather[0]->id);
 }
+curl_close($ch);
 ?>
