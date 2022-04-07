@@ -1,0 +1,43 @@
+body {
+	color: rgb(31, 31, 31);
+    /* background-color:aquamarine;
+    */
+}
+.navbar{
+    padding-left: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.main-contaner{
+    /* height:60vh; */
+    background-color:rgba(200, 242, 255, 0.349);
+    padding:50px;
+    border: 3px solid rgba(75, 79, 83, 0.781);
+    border-radius:20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.b-card{
+    border: 2px solid rgb(73, 73, 73);
+    border-radius: 5px;
+}
+a {
+	color: rgb(0, 0, 0);
+	text-decoration: underline;
+}
+.nav-link {
+	display: block;
+	padding: .5rem 1rem;
+	color: #161616;
+	text-decoration: none;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+footer{
+ text-align: center;
+}
+
+element {
+	margin-top: 50px;
+}
