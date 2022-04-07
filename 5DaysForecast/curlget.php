@@ -10,7 +10,7 @@ if($err = curl_error($ch)){
     echo $err;
 } else {
     $decoded = json_decode($res);
-    print_r($decoded->list[0]->weather[0]->id);
+    // print_r($decoded->list[0]->weather[0]->id);
 }
 curl_close($ch);
 ?>
