@@ -16,19 +16,20 @@
             $icon = $decoded->list[$i]->weather[0]->icon;
             $epoch=$decoded->list[$i]->dt;
             $time=new DateTime("@$epoch");
+            $cTime = date('h:i A');
             // echo $i;
             ?>
             <div class="card c-card ">
                 <img class="card-img-top" style="width=30px"; src="https://openweathermap.org/img/wn/<?php echo $icon ?>@2x.png" alt="Card image cap">
                 <div class="card-body">
-                    <p class="card-text time"><?php echo $time->format('d/m/D H:i:s') ?></p>
-                    <h5 class="card-title">Condition : <?php echo $main ?> </h5> 
+                    <p class="card-text time"><?php echo $time->format('d/m/D') ?></p>
+                    <h5 class="card-title"><span style="color:aquamarine">Condition : <?php echo $main ?> </span></h5> 
                     <br>
-                    <p class="card-text">Current Tempereture : <?php echo $temp ?>°</p>
+                    <p class="card-text">Current Tempereture :<span style="color:"> <?php echo $temp ?>° </span></p>
                     <p class="card-text">Min Tempereture : <?php echo $temp_min ?>°</p>
                     <p class="card-text">Max Tempereture : <?php echo $temp_max ?>°</p>
                     <p class="card-text">Feels like : <?php echo $temp_feelsLike ?>°</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <p class="card-text"><small class="text-muted">Last updated at <?php echo $cTime ?> </small></p>
                 </div>
             </div>
 
