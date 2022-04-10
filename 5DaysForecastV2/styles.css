@@ -1,6 +1,7 @@
 body {
 	color: rgb(255, 255, 255);
-     /* background-color:rgb(41, 41, 41); */
+    /* background-color: rgb(255, 101, 101); */
+    background-image: linear-gradient(90deg,#12b4eb,#5256aa,#db2275);
     
 }
 .navbar{
@@ -11,21 +12,32 @@ body {
 
 .main-contaner{
     /* height:60vh; */
-    background-color:rgba(48, 48, 48, 0.137);
+    background-color:rgba(196, 196, 196, 0.26);
     padding:20px;
-    border: 3px solid rgba(75, 79, 83, 0.226);
+    border: 3px solid rgba(230, 230, 230, 0.288);
     border-radius:20px;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
-
+hr{
+    margin-top:0;
+}
 .c-card{
-    /* border: 2px solid rgb(250, 0, 0); */
-    background-color:rgba(92, 92, 92, 0.164);
+    /* border-right: 2px solid rgba(255, 255, 255, 0.199); */
+    /* border-bottom: 2px solid rgba(255, 255, 255, 0.199); */
+    background-color:rgba(0, 0, 0, 0.164);
     border-radius: 5px;
-    margin:20px;
-    width:90%;
+    margin:18px;
+    width: 90%;
+    color:#00ffaa;
+}
+.card-border{
+    border: 1px solid rgba(226, 226, 226, 0.212);
+    text-align: center;
+    padding:4px;
+    border-radius: 5px;
+    background-color:#00000010;
 }
 .card-img-top{
     width: 70%;
@@ -46,8 +58,15 @@ a {
 	text-decoration: none;
 	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
+.card-body {
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	padding: 1rem 1.5rem;
+	color: #fff;
+}
 footer{
  text-align: center;
+ padding-bottom: 20px;
 }
 
 element {
@@ -60,21 +79,28 @@ element {
 }
 .input_box{
     width:85%;
+    /* border-radius: 5px; */
+    /* height:45px; */
 }
 .search_btn{
 
+}
+element {
+	margin-bottom: 0px;
 }
 .center{
     margin-left: auto;
     margin-right: auto;
 }
 .card-group > .card:not(:first-child) {
+    border: 2px solid rgba(255, 255, 255, 0.199);
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
 .card-group > .card:first-child {
+    border: 2px solid rgba(255, 255, 255, 0.199);
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -90,9 +116,9 @@ element {
 }
 @media only screen and (max-width: 1000px) {
     .main-contaner{
-        background-color:rgb(48, 48, 48);
+        /* background-color:rgb(48, 48, 48); */
         padding:10px;
-        border: 3px solid rgba(75, 79, 83, 0.781);
+        /* border: 3px solid rgba(75, 79, 83, 0.781); */
         border-radius:10px;
         max-width: 80%;
         margin-left: auto;
@@ -101,7 +127,7 @@ element {
     .c-card{
         /* border: 2px solid rgb(250, 0, 0); */
         /* display:block; */
-        background-color:rgb(92, 92, 92);
+        /* background-color:rgb(92, 92, 92); */
         border-radius: 5px;
         margin:20px;
         width:90%;

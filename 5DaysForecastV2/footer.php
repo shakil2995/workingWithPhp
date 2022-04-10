@@ -1,7 +1,7 @@
 <br>
 <br>
 <footer>
-    <!-- &copy; - 2022 -->
+    &copy; Shakil Ahmed - 2022
 </footer>
 
 
